@@ -1,0 +1,24 @@
+#slot {
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+} 
+
+.squares {
+    display: flexbox;
+}
+
+.square {
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border: 1px solid blue;
+    margin: 2px;
+    background: white;
+}
+
+.board {
+    tansition: 
+}
