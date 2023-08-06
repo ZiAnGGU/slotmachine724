@@ -20,7 +20,7 @@ resetBtn.addEventListener("click", reset)
 
 	/*----- functions -----*/
 function getRandomNum () {
-        return Math.floor(Math.random() * 10) +1;
+        return Math.floor(Math.random() * 10);
 }
 
 function getBoardNum () {
@@ -42,6 +42,7 @@ function spin() {
 
 function reset() {
    boardone = boardtwo = boardthree = 0;
+   updateBoard();
 }
 
 // Initial board update
