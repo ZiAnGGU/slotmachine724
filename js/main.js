@@ -7,26 +7,42 @@ let boardone, boardtwo, boardthree;
 
 
 	/*----- cached elements  -----*/
-const getBoardNumBtn = document.getElementById("spin")
-const resetBtn = document.getElementById("reset")
+const getBoardNumBtn = document.getElementById("spin");
+const resetBtn = document.getElementById("reset");
+const boardOneEl = document.querySelector(".boardone");
+const boardTwoEl = document.querySelector(".boardtwo");
+const boardThreeEl = document.querySelector(".boardthree");
+
 
 	/*----- event listeners -----*/
 getBoardNumBtn.addEventListener("click", spin)
 resetBtn.addEventListener("click", reset)
 
 	/*----- functions -----*/
-
-// let x = Math.floor(Math.random() * 10); // max 10 
-// getRandomNum (() => {
-//     value = 10;
-// })
-// document.querySelectorAll(".board").innerHTML = x;
-
 function getRandomNum () {
-    return Math.floor(Math.random() * 10);
+        return Math.floor(Math.random() * 10) +1;
 }
+
 function getBoardNum () {
-    boardone = getRandomNum();
-    boardtwo = getRandomNum();
-    boardthree = getRandomNum();
+        boardone = getRandomNum();
+        boardtwo = getRandomNum();
+        boardthree = getRandomNum();
 }
+
+function updateBoard() {
+    boardOneEl.textContent = boardone;
+    boardTwoEl.textContent = boardtwo;
+    boardThreeEl.textContent = boardthree;
+}
+
+function spin() {
+    getBoardNum();
+    updateBoard();
+}
+
+function reset() {
+   boardone = boardtwo = boardthree = 0;
+}
+
+// Initial board update
+updateBoard();
