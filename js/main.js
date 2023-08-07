@@ -12,7 +12,7 @@ const resetBtn = document.getElementById("reset");
 const boardOneEl = document.querySelector(".boardone");
 const boardTwoEl = document.querySelector(".boardtwo");
 const boardThreeEl = document.querySelector(".boardthree");
-const resultTextEl = document.querySelector(".result-text");
+const resultTextEl = document.querySelector(".result");
 
 
 	/*----- event listeners -----*/
@@ -21,7 +21,7 @@ resetBtn.addEventListener("click", reset)
 
 	/*----- functions -----*/
 function getRandomNum() {
-        return Math.floor(Math.random() * 10);
+        return Math.floor(Math.random() * 2);
 }
 
 function getBoardNum() {
@@ -36,7 +36,7 @@ function checkWin() {
     } else if (boardone === boardtwo || boardone === boardthree || boardtwo === boardthree) {
         return "close";
     } else {
-        return "Keep trying";
+        return "trying";
     }
 }
 
@@ -54,16 +54,15 @@ function spin() {
             resultTextEl.textContent = "You Win!";
         } else if (result === "close") {
             resultTextEl.textContent = "Getting close!";
-        } else {
+        } else { // === "trying"
             resultTextEl.textContent = "Keep trying";
         } 
     }
 
-
 function reset() {
    boardone = boardtwo = boardthree = 0;
    updateBoard();
-   resultTextEl.textContent = "";
+   resultTextEl.textContent = "Welcome!";
 }
 
 // Initial board update
