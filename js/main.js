@@ -21,7 +21,7 @@ resetBtn.addEventListener("click", reset)
 
 	/*----- functions -----*/
 function getRandomNum() {
-        return Math.floor(Math.random() * 2);
+        return Math.floor(Math.random() * 2); // * 2 is for testing, * 10 later
 }
 
 function getBoardNum() {
