@@ -1,11 +1,20 @@
 body {
-    width: 100vw;
-    height: 100vh;
+    background-image: url(https://brand.pngaming.com/m/2922c9189fe760a4/Web_Size_486x273-AdobeStock_173089990.jpg);
+    background-size: cover;
+    background-position: center;
     margin: 0;
     padding: 0;
-}
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  
 h1 {
     font-size: 30px;
+    color: whitesmoke;
     font-weight: bold;
     justify-content: center;
     align-items: center;
@@ -17,12 +26,13 @@ h2 {
     font-size: 20px;
     justify-content: center;
     align-items: center;
+    color: whitesmoke;
 }
 
 #slot {
     width: 100%;
     height: 100%;
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -36,7 +46,7 @@ h2 {
 .square {
     width: 50px;
     height: 50px;
-    border: 1px solid blue;
+    border: 1px solid rgb(212, 194, 77);
     border-radius: 5px;
     margin: 2px;
     background: white;
@@ -55,7 +65,7 @@ button {
 button:hover {
     transform: scale(0.9);
     transition: transform 120ms ease-in-out;
-    background-color: darkred;
+    background-color: rgb(181, 138, 8);
     color: white;
     border: none;
 }
