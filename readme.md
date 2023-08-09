@@ -14,5 +14,5 @@ Game Rules Slot Machine is a popular game that is simply to play. In order to wi
 <img src="./pics/win.png"></img>
 
 - Keep Trying.
-<img src="./pics/trying.png">
+<img src="./pics/trying.png"></img>
 
