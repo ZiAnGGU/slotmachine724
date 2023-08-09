@@ -1,5 +1,9 @@
 	/*----- constants -----*/
-// const numArr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+const emojis = {
+    "0": "😀",
+    "1": "🥲",
+
+}
 
 
 	/*----- state variables -----*/
@@ -60,7 +64,7 @@ function spin() {
     }
 
 function reset() {
-   boardone = boardtwo = boardthree = 0;
+   boardone = boardtwo = boardthree = " "; // = 0 
    updateBoard();
    resultTextEl.textContent = "Welcome!";
 }
