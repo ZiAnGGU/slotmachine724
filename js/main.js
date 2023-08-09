@@ -1,8 +1,16 @@
 	/*----- constants -----*/
 const emojis = {
     "0": "😀",
-    "1": "🥲",
-
+    "1": "🎱",
+    "2": "😂",
+    "3": "🥰",
+    "4": "😝",
+    "5": "🥸",
+    "6": "🥳",
+    "7": "😒",
+    "8": "🥵",
+    "9": "🥶",
+    "10": "🐻"
 }
 
 
@@ -24,8 +32,10 @@ getBoardNumBtn.addEventListener("click", spin)
 resetBtn.addEventListener("click", reset)
 
 	/*----- functions -----*/
+
+
 function getRandomNum() {
-        return Math.floor(Math.random() * 2); // * 2 is for testing, * 10 later
+        return Math.floor(Math.random() * 10); 
 }
 
 function getBoardNum() {
@@ -33,6 +43,7 @@ function getBoardNum() {
         boardtwo = getRandomNum();
         boardthree = getRandomNum();
 }
+
 
 function checkWin() {
     if(boardone === boardtwo && boardtwo === boardthree) {
@@ -44,10 +55,16 @@ function checkWin() {
     }
 }
 
+// function updateBoard() {
+//     boardOneEl.textContent = boardone;
+//     boardTwoEl.textContent = boardtwo;
+//     boardThreeEl.textContent = boardthree;
+// }
+
 function updateBoard() {
-    boardOneEl.textContent = boardone;
-    boardTwoEl.textContent = boardtwo;
-    boardThreeEl.textContent = boardthree;
+    boardOneEl.textContent = emojis[boardone];
+    boardTwoEl.textContent = emojis[boardtwo];
+    boardThreeEl.textContent = emojis[boardthree];
 }
 
 function spin() {
@@ -64,12 +81,10 @@ function spin() {
     }
 
 function reset() {
-   boardone = boardtwo = boardthree = " "; // = 0 
+   boardone = boardtwo = boardthree = "0"; 
    updateBoard();
    resultTextEl.textContent = "Welcome!";
 }
 
 // Initial board update
 updateBoard();
-
-console.log("hello")
