@@ -72,3 +72,4 @@ function reset() {
 // Initial board update
 updateBoard();
 
+console.log("hello")
