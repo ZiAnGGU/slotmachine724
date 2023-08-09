@@ -1,7 +1,20 @@
 # SlotMachine 
-<h1>Slot Machine</h1>
+# H1 Slot Machine
+## H2
+### H3
+#### H4
+##### H5
+###### H6
+
+Alternatively, for H1 and H2, an underline-ish style:
+
+Alt-H1
+======
+
+Alt-H2
 ------
-<p>It is a clasic casino game "Slot Machine". I've used HTML, CSS, and JavaScript for this project. Also I've added some emojis to make game interesting.</p>
+------
+###### H6 It is a clasic casino game "Slot Machine". I've used HTML, CSS, and JavaScript for this project. Also I've added some emojis to make game interesting.
 <h3>You can play the game here ~ </h3>
 <p>(Hope you like it)</p>
 ------
