@@ -1,11 +1,6 @@
 # Slot Machine 
 It is a clasic casino game "Slot Machine". I've used HTML, CSS, and JavaScript for this project. Also I've added some emojis to make game interesting.
-<<<<<<< HEAD
-You can play the game here ~ https://zianggu.github.io/slotmachine724/
-
-=======
-You can play the game here ~ href="https://zianggu.github.io/slotmachine724/"
->>>>>>> gh-pages
+You can play the game here ~ <a href="https://zianggu.github.io/slotmachine724/">
 ------
 ## Rules -
 Game Rules Slot Machine is a popular game that is simply to play. In order to win the game, 3 identical symbols must match in the middle row.
