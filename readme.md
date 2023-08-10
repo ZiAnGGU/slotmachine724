@@ -18,3 +18,7 @@ Game Rules Slot Machine is a popular game that is simply to play. In order to wi
 
 - Add Emojies.
 <img src="./pics/emojis.png"></img>
+
+## Next Steps -
+As you can see, this is the first game I have written from scratch without any prior coding experience, and it will also serve as a starting point. The next step will be to enhance my understanding of pseudocode from various functions, and based on that understanding, incorporate it into this game or other games. This will be a life long journey.
+
