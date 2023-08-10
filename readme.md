@@ -1,6 +1,6 @@
 # Slot Machine 
 It is a clasic casino game "Slot Machine". I've used HTML, CSS, and JavaScript for this project. Also I've added some emojis to make game interesting.
-You can play the game here ~ https://zianggu.github.io/slotmachine724/
+You can play the game here ~ <a href="https://zianggu.github.io/slotmachine724/">
 (Hope you like it)
 ------
 ## Rules -
