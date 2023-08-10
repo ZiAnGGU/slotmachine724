@@ -59,7 +59,7 @@ function checkWin() {
 //     boardOneEl.textContent = boardone;
 //     boardTwoEl.textContent = boardtwo;
 //     boardThreeEl.textContent = boardthree;
-// }
+// }  numbers only 
 
 function updateBoard() {
     boardOneEl.textContent = emojis[boardone];
